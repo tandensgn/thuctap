@@ -1,0 +1,215 @@
+html, body {
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background: #ffffff;
+}
+
+.brand{
+    height: 60px;
+    width: 100%;
+    object-fit: contain;
+    padding-right: 0px;
+}
+
+.brand img{
+    max-height: 100%;
+    max-width: 100%;
+   
+}
+
+
+.header1{
+    background: #02eefc;
+    height: 60px;
+}
+
+
+.top-nav {
+    position: relative;
+    width: 100%;
+    height: 37px;
+    background: #04638f ;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li, ol li {
+    font-size: 14px;
+}
+
+.search-bar {
+    width: 600px;
+    height: 60px;
+}
+.search-option{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+}
+
+.search-text{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 14px;
+    border-radius: 50px;
+    border-color: #ffffff;
+}
+.search-btn{
+    width: 123px;
+    height: 40px;
+    color: #04eef9;
+    text-align: center;
+    background: #013750;
+    border-radius: 50px;
+    margin-left: 15px;
+}
+.search-box{
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.header-align{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.trapezoid {
+	border-bottom: 60px solid #555;
+	border-left: 25px solid transparent;
+	height: 0;
+    width: 100%;
+    vertical-align: middle;
+    padding-left: 0;
+}
+
+.post-login{
+    padding: 0px;
+}
+
+.post{
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 25x;
+    padding-top: 18px;
+}
+
+.login{
+    font-size: 5px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 9px;
+}
+
+.ava-img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    background: #04638f	;
+    color: white;
+
+}
+
+.title{
+    font-size: 25px;
+    padding-top: 27px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.w3-bar-item{
+    font-size: 17px;
+    height: 37px;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 17px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: #073449;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #fd0000;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #990000;
+  text-decoration: underline;
+}
+
+.main{
+    background: #f6f6f6;
+}
+
+.select-district{
+    width: 100px;
+    height: 300px;
+}
+
+.grid-container-main {
+  display: grid;
+  grid-template-columns: 30%  70%;
+  grid-gap: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.location-box{
+    text-align: left;
+    padding: 10px;
+    background: white;
+
+}
+
+.location-box-title{
+    text-align: left;
+    background: #04638f;
+    color: white;
+    
+}
+
+
+.clearfix {
+    overflow: auto;
+  }

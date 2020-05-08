@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+
+/* header top */
+.header-top nav{
+  background: #00effc;
+  height: 60px;
+  width: 100%;
+}
+label.logo{
+    max-height: 100%;
+    max-width: 100%;
+}
+.header-top nav ul{
+  float: right;
+  height: 60px;
+  margin-right: 60px;
+  margin-bottom: 0;
+}
+.header-top nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 8px;
+}
+.header-top nav ul li a{
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.header-top nav ul li b{
+  font-size: 16px;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    padding-left: 25px;
+  }
+  .header-top nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  .header-top ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #04638f;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .header-top nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .header-top nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+
+.search-bar {
+    width: 900px;
+    height: 60px;
+}
+.search-text{
+    width: 100%;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+}
+.login{
+    font-size: 5px;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 0px;
+}
+.trapezoid {
+	border-bottom: 60px solid #555;
+	border-left: 25px solid transparent;
+	height: 0;
+    width: auto;
+    vertical-align: middle;
+    padding-left: 0;
+}
+.rectangle {
+  height: 60px;
+  width: 100%;
+  background-color: #555;
+}
+
+
+
+/* header-bottom */
+.header-bottom nav{
+  background: #03628e;
+  height: 37px;
+  width: 100%;
+}
+.header-bottom nav ul{
+  margin-right: 60px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.header-bottom nav ul li{
+  display: inline-block;
+  line-height: 37px;
+  margin: 0 15px;
+}
+.header-bottom nav ul li a{
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+.header-bottom nav ul li a:hover{
+    color: #1de8f6;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    padding-left: 25px;
+    
+  }
+  .header-bottom nav ul li a{
+    font-size: 16px;
+  }
+  .search-text{
+      width: 80%;
+  }
+  .search-bar{
+      width: 90%;
+  }
+  .main{
+      display: none;
+  }
+  .login{
+      font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  .header-bottom ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .header-bottom nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .header-bottom nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/*main breadcrumbs*/
+.breadcrumbs nav{
+  background: #e1e1e1;
+  height: 37px;
+  width: 100%;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+  font-style: inherit;
+  color: #013753;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #fa0300;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #a90200;
+  text-decoration: none;
+}
+
+
+
+/*Main*/
+.main {
+    background: #f6f6f6;
+    padding: 20px 15px;
+}
+.district-box {
+    background: #ffffff;
+    border: 1px;
+    border-color: #e3e3e3;
+    width: 300px;
+    height: 460px;
+    margin: 0px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 0.2);
+}
+.district-title{
+    height: 40px;
+    background: #04638f;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: white;
+    border-radius: 4px 4px 0 0 ;
+}
+.district-title i{
+    color: #04efff;
+}
+.district-name{
+    height: 40px;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: black;
+}
+.district-name li{
+    margin-top: 10px;
+}
+
+.room-img{
+    background: #f6f6f6;
+}
+.room-img-title{
+    font-size: 50px;
+}
+
